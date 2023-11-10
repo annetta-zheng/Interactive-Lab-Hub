@@ -111,19 +111,6 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 ##### 5 Pet Interactor
 ![IMG_6139.jpg](https://hackmd.io/_uploads/rk_m_Xo7a.jpg)
 
-##### 6 Dual Player Board Games
-From 3D to 2D, the two players compete each other for the score.
-
-###### 6.1 Honky Game
-<img width="446" alt="Screenshot 2023-11-09 at 23 11 38" src="https://github.com/annetta-zheng/Interactive-Lab-Hub/assets/67286396/e562261c-4a28-40cf-bcb4-b4ea9135167c">
-<img width="242" alt="Screenshot 2023-11-09 at 23 13 30" src="https://github.com/annetta-zheng/Interactive-Lab-Hub/assets/67286396/bc4ef9b0-fc51-4c3e-9692-bc173f775fc1">
-
-###### 6.2 Plane War
-<img width="309" alt="Screenshot 2023-11-09 at 23 19 28" src="https://github.com/annetta-zheng/Interactive-Lab-Hub/assets/67286396/a390e6fc-b2ef-4af5-b695-84da025993e5">
-
-###### 6.3 Soccer
-<img width="428" alt="Screenshot 2023-11-09 at 23 20 44" src="https://github.com/annetta-zheng/Interactive-Lab-Hub/assets/67286396/b38e2008-0504-40c3-a301-8d925b858e91">
-
 
 ### Part C
 ### Streaming a Sensor
@@ -268,4 +255,22 @@ Click to view the video:
 
 
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
+
+
+
+
+
+##### Appendix. Other Ideas.
+##### 6 Dual Player Board Games
+From 3D to 2D, the two players compete each other for the score.
+
+###### 6.1 Honky Game
+<img width="446" alt="Screenshot 2023-11-09 at 23 11 38" src="https://github.com/annetta-zheng/Interactive-Lab-Hub/assets/67286396/e562261c-4a28-40cf-bcb4-b4ea9135167c">
+<img width="242" alt="Screenshot 2023-11-09 at 23 13 30" src="https://github.com/annetta-zheng/Interactive-Lab-Hub/assets/67286396/bc4ef9b0-fc51-4c3e-9692-bc173f775fc1">
+
+###### 6.2 Plane War
+<img width="309" alt="Screenshot 2023-11-09 at 23 19 28" src="https://github.com/annetta-zheng/Interactive-Lab-Hub/assets/67286396/a390e6fc-b2ef-4af5-b695-84da025993e5">
+
+###### 6.3 Soccer
+<img width="428" alt="Screenshot 2023-11-09 at 23 20 44" src="https://github.com/annetta-zheng/Interactive-Lab-Hub/assets/67286396/b38e2008-0504-40c3-a301-8d925b858e91">
 

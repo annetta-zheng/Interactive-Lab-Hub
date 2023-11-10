@@ -1,4 +1,5 @@
 import paho.mqtt.client as mqtt
+import cv2
 import uuid
 import ssl
 import board
@@ -12,11 +13,20 @@ from adafruit_seesaw.seesaw import Seesaw
 from adafruit_seesaw.analoginput import AnalogInput
 from adafruit_seesaw import neopixel
 from Qwiic_LED_Stick_examples.qwiic_led_stick_ex8_walking_rainbow import walking_rainbow 
+import json
+import base64
+
 
 
 import digitalio
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
+
+
+wCam, hCam = 640, 480
+cap = cv2.VideoCapture(0)
+cap.set(3, wCam)
+cap.set(4, hCam)
 
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
@@ -82,10 +92,7 @@ def on_message(cleint, userdata, msg):
     if msg.topic == topic:
         print("other user choose")
         global CHOOSE
-        CHOOSE = True
-        
-    
-    
+        CHOOSE = True    
 
 client = mqtt.Client(str(uuid.uuid1()))
 client.tls_set(cert_reqs=ssl.CERT_NONE)
@@ -104,7 +111,11 @@ def handler(signum, frame):
     print('exit gracefully')
     client.loop_stop()
     exit (0)
-
+    
+buttonA = digitalio.DigitalInOut(board.D23)
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonA.switch_to_input()
+buttonB.switch_to_input()
 # hen sigint happens, do the handler callback function
 signal.signal(signal.SIGINT, handler)
 # our main loop
@@ -115,7 +126,35 @@ while True:
         walking_rainbow(my_stick, 20, LED_length, 0.1)
         my_stick.set_all_LED_brightness(0)
         CHOOSE = False
+        # Check if the camera opened successfully
+        if not cap.isOpened():
+            print("Error: Could not open camera.")
+    
+        # Capture frames continuously
+        while True:
+            ret, frame = cap.read()
+            if ret:
+                # Display the captured image
+                cv2.imshow('Tarot Reader Camera', frame)
+            # print("Error: Could not read frame.")
+                
+            if not buttonA.value:
+                cv2.imwrite('tarotimg/result.jpg', frame, [int(cv2.IMWRITE_JPEG_QUALITY), 30])
+                data = {}
+                with open('tarotimg/result.jpg', mode='rb') as file:
+                    img = file.read()
+
+                data['img'] = base64.b64encode(img).decode('utf-8')
+                print("img to json")
+                cmd = input('>> topic: IDD/tarotresult')
+                if ' ' in cmd:
+                    print('sorry white space is a no go for topics')
+                else:
+                    client.publish('IDD/tarotresult', json.dumps(data))
+                    print("json sent")
         time.sleep(.1)
+        
+        
         # my_stick.set_all_LED_brightness(0)
 
     my_stick.set_all_LED_brightness(0)

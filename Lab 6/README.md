@@ -96,15 +96,23 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 
 **\*\*\*Consider how you might use this messaging system on interactive devices, and draw/write down 5 ideas here.\*\*\***
 
+##### 1
 ![image](https://hackmd.io/_uploads/BkjlXQomp.png)
 
+##### 2
 ![image](https://hackmd.io/_uploads/HJgjXXjQp.png)
 
+##### 3
 ![image](https://hackmd.io/_uploads/By4hHmsma.png)
 
+##### 4
 ![IMG_6138.jpg](https://hackmd.io/_uploads/SySD8Xi7T.jpg)
 
+##### 5
 ![IMG_6139.jpg](https://hackmd.io/_uploads/rk_m_Xo7a.jpg)
+
+##### 6
+<img width="446" alt="Screenshot 2023-11-09 at 23 11 38" src="https://github.com/annetta-zheng/Interactive-Lab-Hub/assets/67286396/e562261c-4a28-40cf-bcb4-b4ea9135167c">
 
 ### Part C
 ### Streaming a Sensor

@@ -120,12 +120,15 @@ buttonB.switch_to_input()
 signal.signal(signal.SIGINT, handler)
 # our main loop
 LED_length = 10
+# my_stick.set_all_LED_brightness(1)
+# walking_rainbow(my_stick, 20, 10, 0.1)
+my_stick.set_all_LED_brightness(0)
 while True:
     if CHOOSE:
         my_stick.set_all_LED_brightness(1)
-        walking_rainbow(my_stick, 20, LED_length, 0.1)
+        walking_rainbow(my_stick, 20, 10, 0.1)
         my_stick.set_all_LED_brightness(0)
-        CHOOSE = False
+        
         # Check if the camera opened successfully
         if not cap.isOpened():
             print("Error: Could not open camera.")
@@ -152,7 +155,8 @@ while True:
                 else:
                     client.publish('IDD/tarotresult', json.dumps(data))
                     print("json sent")
-        time.sleep(.1)
+        CHOOSE = False
+        # time.sleep(.1)
         
         
         # my_stick.set_all_LED_brightness(0)

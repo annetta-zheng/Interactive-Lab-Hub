@@ -26,6 +26,7 @@ while True:
 		while True:
 			val = input(">> message: ")
 			if val =='new-topic':
+				print(1)
 				break
 			else:
 				client.publish(topic, val)

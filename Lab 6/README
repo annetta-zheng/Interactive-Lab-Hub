@@ -1,6 +1,6 @@
 # Little Interactions Everywhere
 
-**NAMES OF COLLABORATORS HERE**
+**NAMES OF COLLABORATORS HERE** [Sophie Wu(NetID: sw2298)](https://github.com/sophiewu7/Interactive-Lab-Hub/tree/Fall2023/Lab%206)
 
 ## Prep
 
@@ -186,13 +186,13 @@ Please see the videos: `color_change_part1` and `color_change_part2` for the dem
 
 Video Folder: https://drive.google.com/drive/u/2/folders/1hbvnUMJ-cx8DhAtAyXRFDosOQR1tiwWC
 
-<!-- <img src="./imgs/partc_img0.jpg" width="200"/>
+<img src="./imgs/partc_img0.jpg" width="200"/>
 <img src="./imgs/partc_img1.jpg" width="200"/>
 <img src="./imgs/partc_img2.jpg" width="200"/>
 <img src="./imgs/partc_img3.jpg" width="200"/>
-<img src="./imgs/partc_img4.jpg" width="200"/> -->
-![partc_img0.jpg](https://hackmd.io/_uploads/r1vtPJomp.jpg =x200) ![partc_img1.jpg](https://hackmd.io/_uploads/BkHFPysXp.jpg =x200)
-![partc_img2.jpg](https://hackmd.io/_uploads/rJKdvyi76.jpg =x200) ![partc_img3.jpg](https://hackmd.io/_uploads/B1IuP1imp.jpg =x200) ![partc_img4.jpg](https://hackmd.io/_uploads/BJDDvJiX6.jpg =x200)
+<img src="./imgs/partc_img4.jpg" width="200"/>
+<!-- ![partc_img0.jpg](https://hackmd.io/_uploads/r1vtPJomp.jpg =x200) ![partc_img1.jpg](https://hackmd.io/_uploads/BkHFPysXp.jpg =x200)
+![partc_img2.jpg](https://hackmd.io/_uploads/rJKdvyi76.jpg =x200) ![partc_img3.jpg](https://hackmd.io/_uploads/B1IuP1imp.jpg =x200) ![partc_img4.jpg](https://hackmd.io/_uploads/BJDDvJiX6.jpg =x200) -->
 
 In the demo, we showed the process of changing the starter color: **light pink** with the published rgba messages with "GREEN" and "BLUE". 
 

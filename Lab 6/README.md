@@ -249,10 +249,11 @@ Please refer to `tarot_reader.py` for code of the reader side.
 **\*\*\*4. Document the working prototype in use.\*\*\*** 
 
 
-Click to view the video:
+Click the image below to view the video:
 
 [<img src="https://hackmd.io/_uploads/B1nNufsmT.jpg">](https://youtu.be/p0TKXzx_ljs)
 
+https://www.youtube.com/watch?v=p0TKXzx_ljs
 
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
 
